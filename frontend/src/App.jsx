@@ -18,7 +18,7 @@ function App() {
     setInput("");
     setLoading(true);
 
-    const res = await fetch("http://localhost:5001/chat", {
+    const res = await fetch("https://abfrl-agent.onrender.com/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
